@@ -1,7 +1,7 @@
 package com.javarush.test.level24.lesson02.task01;
 
 /* Cloneable
-Добавьте java-код, чтобы метод main отработал без исключений.
+Добавьте kotlin-код, чтобы метод main отработал без исключений.
 Удалять что-либо нельзя.
 */
 public class Solution {

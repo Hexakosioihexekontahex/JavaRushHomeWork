@@ -8,9 +8,9 @@ import java.util.ArrayList;
 2. вывести в консоль стек исключений начиная с самого вложенного.
 Пример исключения: new Exception("ABC", new RuntimeException("DEF", new IllegalAccessException("GHI")))
 Пример вывода:
-java.lang.IllegalAccessException: GHI
-java.lang.RuntimeException: DEF
-java.lang.Exception: ABC
+kotlin.lang.IllegalAccessException: GHI
+kotlin.lang.RuntimeException: DEF
+kotlin.lang.Exception: ABC
 */
 public class Solution implements Thread.UncaughtExceptionHandler {
     @Override

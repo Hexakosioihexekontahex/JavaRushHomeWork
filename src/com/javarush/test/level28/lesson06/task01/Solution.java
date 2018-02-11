@@ -5,7 +5,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
 /* Magic class
-В пакете java.util.concurrent найдите такую реализацию List, у которой
+В пакете kotlin.util.concurrent найдите такую реализацию List, у которой
 1. итератор не содержит какие-либо данные, вставленные в список после создания итератора
 2. внутри данные хранятся в виде массива
 3. итератор гарантированно не бросает ConcurrentModificationException

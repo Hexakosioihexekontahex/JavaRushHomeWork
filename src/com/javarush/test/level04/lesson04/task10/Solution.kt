@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
     val b = Integer.parseInt(sb)
     val c = Integer.parseInt(sc)
     if (a == b && a == c) {
-        // TODO Need do refactoring later (chapter 2nd) in connection with the idiomatics of Kotlin (if else if else if else...)
+        // TODO Need do refactoring later (chapter03 2nd) in connection with the idiomatics of Kotlin (if else if else if else...)
         println("$a $b $c")
     } else if (a == b) {
         println("$a $b")

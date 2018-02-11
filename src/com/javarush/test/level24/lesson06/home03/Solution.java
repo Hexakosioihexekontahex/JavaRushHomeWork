@@ -3,10 +3,10 @@ package com.javarush.test.level24.lesson06.home03;
 import java.util.List;
 
 /* Интернет-магазин продажи джинсов
-1.Внутри файла Solution.java, но НЕ внутри класса Solution создайте 2 интерфейса:
+1.Внутри файла Solution.kotlin, но НЕ внутри класса Solution создайте 2 интерфейса:
 1.1) Item с методами int getId(), double getPrice(), String getTM()
 1.2) Jeans extends Item с методами int getLength() и int getSize()
-2. В классе Util в методе getAllJeans добавьте пропущенную часть java-кода:
+2. В классе Util в методе getAllJeans добавьте пропущенную часть kotlin-кода:
 2.1) разберитесь в том, что уже есть в методе getAllJeans класса Util
 2.2) создайте абстрактный class AbstractJeans от интерфейса Jeans с одним абстрактным методом, реализуйте остальные методы
 2.3) создайте классы Levis и Denim от AbstractJeans, реализуйте оставшийся метод

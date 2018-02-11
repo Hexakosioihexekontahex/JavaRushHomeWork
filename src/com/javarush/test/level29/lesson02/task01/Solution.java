@@ -47,7 +47,7 @@ public class Solution {
 
     public static void main(String[] args) throws FileNotFoundException {
         String packageName = Solution.class.getPackage().getName().replaceAll("[.]", "\\\\");
-        String fileName = "src\\" + packageName + "\\Solution.java";
+        String fileName = "src\\" + packageName + "\\Solution.kotlin";
 
         Solution solution = new Solution(fileName);
         solution.downloadFileContent();

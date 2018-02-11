@@ -1,4 +1,4 @@
-package com.kotlin.draft.chapter.one
+package com.kotlin.draft.chapter01
 
 data class Person(val name: String,
                   val age: Int? = null)

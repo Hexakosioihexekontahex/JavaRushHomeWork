@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /* Весь мир играет комедию.
-Почитать про java.util.concurrent.locks.Lock на http://docs.oracle.com/  (там все есть в джавадоках!)
+Почитать про kotlin.util.concurrent.locks.Lock на http://docs.oracle.com/  (там все есть в джавадоках!)
 Написать реализацию метода someMethod:
 1. попытаться захватить лок
 1.1. если лок занят, то вызвать метод ifLockIsBusy

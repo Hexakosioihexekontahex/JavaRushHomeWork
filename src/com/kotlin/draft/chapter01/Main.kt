@@ -1,4 +1,4 @@
-package com.kotlin.draft.chapter.one
+package com.kotlin.draft.chapter01
 
 fun main(args: Array<String>) {
     nullableString()

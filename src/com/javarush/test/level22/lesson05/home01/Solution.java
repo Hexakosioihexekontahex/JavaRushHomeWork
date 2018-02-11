@@ -7,9 +7,9 @@ package com.javarush.test.level22.lesson05.home01;
 б) TooShortStringSecondThreadException, если имя трэда SECOND_THREAD_NAME.
 в) RuntimeException в других случаях.
 3. Реализуйте логику трех protected методов в ThisUncaughtExceptionHandler используя вызовы соответствующих методов согласно следующему шаблону:
-a) 1# : TooShortStringFirstThreadException : java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-б) java.lang.StringIndexOutOfBoundsException: String index out of range: -1 : TooShortStringSecondThreadException : 2#
-в) RuntimeException : java.lang.StringIndexOutOfBoundsException: String index out of range: -1 : 3#
+a) 1# : TooShortStringFirstThreadException : kotlin.lang.StringIndexOutOfBoundsException: String index out of range: -1
+б) kotlin.lang.StringIndexOutOfBoundsException: String index out of range: -1 : TooShortStringSecondThreadException : 2#
+в) RuntimeException : kotlin.lang.StringIndexOutOfBoundsException: String index out of range: -1 : 3#
 */
 public class Solution {
     public static void main(String[] args) {

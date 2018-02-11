@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.concurrent.Phaser;
 
 /* Plants vs Zombies
-1. Почитайте про java.util.concurrent.Phaser
+1. Почитайте про kotlin.util.concurrent.Phaser
 2. Расставь методы в нужных местах
 -arriveAndDeregister() - начинает запускать методы run у тасок
 -arriveAndAwaitAdvance() - ждет, когда все трэды будут созданы
