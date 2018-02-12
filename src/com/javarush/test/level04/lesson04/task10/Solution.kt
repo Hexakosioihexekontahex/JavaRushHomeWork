@@ -13,15 +13,12 @@ fun main(args: Array<String>) {
     val a = Integer.parseInt(sa)
     val b = Integer.parseInt(sb)
     val c = Integer.parseInt(sc)
-    if (a == b && a == c) {
-        // TODO Need do refactoring later (chapter03 2nd) in connection with the idiomatics of Kotlin (if else if else if else...)
-        println("$a $b $c")
-    } else if (a == b) {
-        println("$a $b")
-    } else if (a == c) {
-        println("$a $c")
-    } else if (b == c) {
-        println("$b $c")
+
+    when {
+        (a == b && a == c) -> println("$a $b $c")
+        (a == b) -> println("$a $b")
+        (a == c) -> println("$a $c")
+        (b == c) -> println("$b $c")
     }
 
 }
