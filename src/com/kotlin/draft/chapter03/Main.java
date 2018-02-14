@@ -13,6 +13,12 @@ public class Main {
 
         System.out.println(StringFunctions.joinToString(list, "", "|", "|"));
         System.out.println(StringFunctions.joinToString(list, "|"));
+        StringFunctions.reportOperationCount();
+
+        View view = new Button();
+        FunctionsExtenionsCantBeOverridedKt.showOff(view);
+
+        System.out.println(StringFunctions.getLastChar("Java"));
     }
 
 }
