@@ -13,4 +13,12 @@ fun main(args: Array<String>) {
     div(6, 3)
     div(10, 6)
     div(2, 4)
+
+    6 infixDiv 3
+    10 infixDiv 6
+    2 infixDiv 4
+}
+
+infix fun Int.infixDiv(a: Int) {
+    println(this / a)
 }

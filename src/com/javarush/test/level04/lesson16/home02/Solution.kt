@@ -13,11 +13,10 @@ fun main(args: Array<String>) {
     val a = Integer.parseInt(sa)
     val b = Integer.parseInt(sb)
     val c = Integer.parseInt(sc)
-    if (b in (c + 1)..(a - 1) || b in (a + 1)..(c - 1)) {
-        println(b)
-    } else if (c in (b + 1)..(a - 1) || c in (a + 1)..(b - 1)) {
-        println(c)
-    } else if (a in (c + 1)..(b - 1) || a in (b + 1)..(c - 1)) {
-        println(a)
+
+    when {
+        (b in (c + 1)..(a - 1) || b in (a + 1)..(c - 1)) -> println(b)
+        (c in (b + 1)..(a - 1) || c in (a + 1)..(b - 1)) -> println(c)
+        (a in (c + 1)..(b - 1) || a in (b + 1)..(c - 1)) -> println(a)
     }
 }

@@ -5,7 +5,7 @@ class CatKotlin {
         catCount++
     }
 
-    companion object {//TODO проверить идиоматику когда столкнусь с темой в книге
+    companion object {
         var catCount = 0
     }
 }
