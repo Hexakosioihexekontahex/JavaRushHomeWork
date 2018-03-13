@@ -34,7 +34,7 @@ public class Solution
             list.add(s);
         }
 
-        ArrayList<String> listDoubleThriple = new ArrayList<>();
+        ArrayList<String> listDoubleTriple = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             String s;
             if(list.get(i).length()%2==0){
@@ -42,9 +42,9 @@ public class Solution
             } else {
                 s = list.get(i) + " " + list.get(i) + " " + list.get(i);
             }
-            listDoubleThriple.add(s);
+            listDoubleTriple.add(s);
         }
-        for(String s : listDoubleThriple){
+        for(String s : listDoubleTriple){
             System.out.println(s);
         }
     }

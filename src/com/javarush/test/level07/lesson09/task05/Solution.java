@@ -23,8 +23,8 @@ public class Solution
 
         ArrayList<String> result = doubleValues(list);
 
-        for(int i=0;i<list.size();i++){
-            System.out.println(list.get(i));//Вывести на экран result
+        for(int i=0;i<result.size();i++){
+            System.out.println(result.get(i));//Вывести на экран result
         }
     }
 
