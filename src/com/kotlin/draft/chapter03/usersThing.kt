@@ -6,7 +6,8 @@ fun User.validateBeforeSave(){
     fun validate(value: String, fieldName: String){
         if(value.isEmpty()){
             throw IllegalArgumentException(
-                    "Can't save user $id: empty $fieldName")//к свойствам класса User можно обращаться напрямую
+                    "Can't save user $id: empty $fieldName")
+            //к свойствам класса User можно обращаться напрямую
         }
     }
     validate(name, "Name")
