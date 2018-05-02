@@ -2,7 +2,7 @@ package com.kotlin.draft.chapter08.p2
 
 
 import com.kotlin.draft.chapter05.p1.Person
-import sun.misc.Lock
+import java.util.concurrent.locks.Lock
 
 inline fun <T> synchronized(lock: Lock, action: () -> T): T {
     lock.lock()
@@ -14,10 +14,10 @@ inline fun <T> synchronized(lock: Lock, action: () -> T): T {
 }
 
 fun main(args: Array<String>) {
-    val l = Lock()
-    synchronized(l) {
-        //...
-    }
+//    val l = Lock()
+//    synchronized(l) {
+//        //...
+//    }
 
     val people = listOf(Person("Alice", 29), Person("Bob", 31))
     println(people.filter { it.age < 30 })
