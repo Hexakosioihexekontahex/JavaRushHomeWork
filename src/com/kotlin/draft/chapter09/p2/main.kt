@@ -1,7 +1,7 @@
 package com.kotlin.draft.chapter09.p2
 
-import com.sun.deploy.services.Service
-import java.util.*
+//import com.sun.deploy.services.Service
+//import java.util.*
 
 fun main(args: Array<String>) {
 
@@ -70,12 +70,13 @@ inline fun <reified T>
     return destination
 }
         */
-
+/**
 val serviceImpl = loadService<Service>()
 
 inline fun <reified T> loadService(): ServiceLoader<T>? {
     return ServiceLoader.load(T::class.java)
 }
+*/
 /**
 inline fun <reified T: Activity> Context.startActivity() {
     val intent = Intent(this, T::class.java)
