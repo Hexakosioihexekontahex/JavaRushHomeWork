@@ -1,29 +1,24 @@
 package com.kotlin.draft.chapter10.p1
 
+import ru.yole.jkid.deserialization.deserialize
+import ru.yole.jkid.serialization.serialize
 import kotlin.reflect.KClass
 
-/**
- *
- *      --- Для Gradle-проекта ---
- *
- *
 data class Person(val name: String, val age: Int)
 
 fun main(args: Array<String>) {
     val person = Person("Alice", 29)
     println(serialize(person))
-[Output]:{"age": 29, "name": "Alice"}
+
     val json = """{"name": "Alice", "age": 29}"""
-    println(deserialize<person>(json))
-[Output]:Person(name=Alice, age=29)
+    println(deserialize<Person>(json))
+
 }
-        */
-/**
-data class Person(
+
+data class Person1(
         @JsonName("alias") val firstName: String, //ключ
         @JsonExclude val age: Int? = null //исключено из процесса сериализации/десериализации
 )
-*/
 
 annotation class JsonName(val name: String)
 
@@ -50,7 +45,7 @@ interface Company {
 
 data class CompanyImpl(override val name: String) : Company
 
-data class Person(
+data class Person2(
         val name: String,
         @DeserializeInterface(CompanyImpl::class) val company: Company
 )
