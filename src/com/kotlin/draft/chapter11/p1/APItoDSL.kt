@@ -1,5 +1,10 @@
 package com.kotlin.draft.chapter11.p1
 
+import kotlinx.html.stream.createHTML
+import kotlinx.html.table
+import kotlinx.html.td
+import kotlinx.html.tr
+
 /**
         StringUtil.capitalize(s) => s.capitalize()
         1.to("one") => 1 to "one"
@@ -13,6 +18,7 @@ package com.kotlin.draft.chapter11.p1
                                 }
 
         val yesterday = 1.days.ago
+*/
 
         fun createSimpleTable() = createHTML().
             table {
@@ -20,8 +26,6 @@ package com.kotlin.draft.chapter11.p1
                     td { +"cell"}
                 }
             }
-
-        */
 
 /**
         SELECT Country.name, COUNT(Customer.id)
@@ -47,7 +51,6 @@ package com.kotlin.draft.chapter11.p1
         str should startWith("kot") // assertTrue(str.startsWith("kot")
         */
 
-/**
 fun createAnotherTable() = createHTML().table {
     val numbers = mapOf(1 to "one", 2 to "two")
     for ((num, string) in numbers) {
@@ -58,6 +61,7 @@ fun createAnotherTable() = createHTML().table {
     }
 }
 
+/**
  <table>
     <tr>
         <td>1</td>
